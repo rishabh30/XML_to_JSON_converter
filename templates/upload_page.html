@@ -1,0 +1,12 @@
+<html>
+    <head></head>
+    <body>
+        <H1>
+            Please upload an XML file and click on the submit button to convert the XML file into JSON.
+        </H1>
+        <form method = "POST" enctype="multipart/form-data">{% csrf_token %}
+            <input type="file" name="file">
+            <input type="submit">
+        </form>
+    </body>
+</html>
